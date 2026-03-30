@@ -54,10 +54,10 @@ const Header = () => {
         </div>
         {/* Always visible CTA */}
         <button className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-5 py-2 rounded-lg shadow-md hover:shadow-lg active:scale-95 transition-all duration-200 ml-2"
-          onClick={() => window.location.href = "/WebrayzDev/for-sellers"}
+       
         >
           <MdSell className="text-base" />
-          Start Selling
+         <link to="/for-sellers">Start Selling </link>
         </button>
         {/* Hamburger for mobile */}
         <button
