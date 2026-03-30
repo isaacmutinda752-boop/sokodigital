@@ -6,7 +6,7 @@ import App from './App.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <BrowserRouter basename="/WebrayzDev/">
+    <BrowserRouter basename="/sokodigital/">
       <App />
     </BrowserRouter>
   </StrictMode>,
