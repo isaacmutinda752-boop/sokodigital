@@ -5,7 +5,8 @@ import {
     FaHashtag, FaArrowRight, FaAward,
     FaChevronRight, FaPlus
 } from "react-icons/fa6";
-import { motion, type Variants } from "framer-motion";
+import { motion } from "framer-motion";
+import type { Variants } from "framer-motion";
 import { Link } from "react-router-dom";
 
 const fadeUpVariant: Variants = {

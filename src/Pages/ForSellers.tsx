@@ -3,7 +3,8 @@ import { FaCircleCheck, FaStar } from "react-icons/fa6";
 import Header from "../Components/Header.tsx";
 import Footer from "../Components/Footer.tsx";
 import { FaUserPlus, FaCloudArrowUp, FaDollarSign, FaMoneyBillTransfer } from "react-icons/fa6";
-import { motion, type Variants } from "framer-motion";
+import { motion } from "framer-motion";
+import type { Variants } from "framer-motion";
 import { Link } from "react-router-dom";
 
 const fadeUpVariant: Variants = {
