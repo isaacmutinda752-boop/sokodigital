@@ -2,7 +2,7 @@ import { useState } from "react";
 import { FaArrowRight, FaBars } from "react-icons/fa6";
 import logo from "../assets/marketplacelogo123.jpeg";
 import { MdSell } from "react-icons/md";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const navLinks = [
   { to: "/", label: "Marketplace" },
@@ -14,6 +14,7 @@ const navLinks = [
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const navigate = useNavigate();
   return (
     <div className="flex flex-col w-full font-sans sticky top-0 z-50">
       {/* Top Announcement Bar */}
@@ -21,7 +22,7 @@ const Header = () => {
         <p className="text-white font-medium tracking-wide">Kenya's First Digital Marketplace</p>
         <p className="text-white hidden sm:block">Affiliates Earn up to 30% commission per sale</p>
         <button className="flex items-center gap-1.5 text-yellow-300 font-semibold hover:text-yellow-200 transition-colors duration-200"
-          onClick={() => window.location.href = "/WebrayzDev/AffiliateCreateAccount"}
+          onClick={() => navigate("/AffiliateCreateAccount")}
         >
           Join Free <FaArrowRight className="text-xs" />
         </button>
@@ -53,11 +54,12 @@ const Header = () => {
           </Link>
         </div>
         {/* Always visible CTA */}
-        <button className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-5 py-2 rounded-lg shadow-md hover:shadow-lg active:scale-95 transition-all duration-200 ml-2"
-       
+        <button 
+          className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-5 py-2 rounded-lg shadow-md hover:shadow-lg active:scale-95 transition-all duration-200 ml-2"
+          onClick={() => navigate("/for-sellers")}
         >
           <MdSell className="text-base" />
-         <link to="/for-sellers">Start Selling </link>
+          <span>Start Selling</span>
         </button>
         {/* Hamburger for mobile */}
         <button

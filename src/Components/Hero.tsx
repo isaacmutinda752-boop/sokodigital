@@ -1,6 +1,8 @@
 import { FaMobileScreenButton, FaCloudArrowDown, FaUsers, FaShieldHalved } from "react-icons/fa6";
+import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
+    const navigate = useNavigate();
     // Header Features
     const features = [
         { text: "M-Pesa STK push", icon: FaMobileScreenButton },
@@ -141,7 +143,7 @@ const Hero = () => {
                             (e.currentTarget as HTMLButtonElement).style.boxShadow = "0 4px 32px rgba(59,130,246,0.45)";
                             (e.currentTarget as HTMLButtonElement).style.transform = "translateY(0)";
                         }}
-                        onClick={() => window.location.href = "/WebrayzDev/all-products"}
+                        onClick={() => navigate("/all-products")}
                     >
                         View Products
                     </button>
@@ -163,7 +165,7 @@ const Hero = () => {
                             (e.currentTarget as HTMLButtonElement).style.borderColor = "rgba(255,255,255,0.18)";
                             (e.currentTarget as HTMLButtonElement).style.transform = "translateY(0)";
                         }}
-                        onClick={() => window.location.href = "/WebrayzDev/for-sellers"}
+                        onClick={() => navigate("/for-sellers")}
                     >
                         Start Selling
                     </button>
