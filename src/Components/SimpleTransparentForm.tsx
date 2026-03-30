@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useSearchParams, Link, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { FaUser, FaEnvelope, FaStore, FaPhone, FaArrowRight, FaCircleCheck, FaStar, FaArrowLeft } from 'react-icons/fa6';
+import { FaUser, FaEnvelope, FaStore, FaPhone, FaArrowRight, FaCircleCheck, FaArrowLeft } from 'react-icons/fa6';
 
 const SimpleTransparentForm = () => {
     const [searchParams] = useSearchParams();

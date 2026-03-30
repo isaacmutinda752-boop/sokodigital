@@ -7,15 +7,15 @@ import {
     FaWhatsapp, FaYoutube, FaFacebook, FaInstagram,
     FaEnvelopeOpenText, FaChevronRight
 } from "react-icons/fa6";
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 import { Link } from "react-router-dom";
 
-const fadeUpVariant = {
+const fadeUpVariant: Variants = {
     hidden: { opacity: 0, y: 30 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
 };
 
-const staggerContainer = {
+const staggerContainer: Variants = {
     hidden: { opacity: 0 },
     visible: { opacity: 1, transition: { staggerChildren: 0.15 } }
 };
